@@ -13,7 +13,7 @@ sepia --> Positive  Real: Positive (Correct)
  the pastas are incredible , the risottos ( particularly the sepia ) are fantastic and the [ASP]braised rabbit[ASP] is amazing .  
 braised rabbit --> Positive  Real: Positive (Correct)
  the [ASP]food[ASP] here was mediocre at best .  
-food --> Negative  Real: Negative (Correct)
+food --> Positive  Real: Negative (Wrong)
  it was totally overpriced- [ASP]fish and chips[ASP] was about $ 15 ....  
 fish and chips --> Negative  Real: Negative (Correct)
  tasty [ASP]dog[ASP] !  
@@ -53,9 +53,9 @@ sashimi --> Positive  Real: Positive (Correct)
  the sashimi is always fresh and the [ASP]rolls[ASP] are innovative and delicious .  
 rolls --> Positive  Real: Positive (Correct)
  have never had a problem with [ASP]service[ASP] save a missing rice once .  
-service --> Neutral  Real: Positive (Wrong)
+service --> Positive  Real: Positive (Correct)
  [ASP]delivery[ASP] can be spot on or lacking depending on the weather and the day of the week .  
-delivery --> Positive  Real: Negative (Wrong)
+delivery --> Negative  Real: Negative (Correct)
  [ASP]delivery guy[ASP] sometimes get upset if you do n't tip more than 10 % .  
 delivery guy --> Negative  Real: Negative (Correct)
  best . [ASP]sushi[ASP] . ever .  
@@ -69,7 +69,7 @@ millennium roll --> Positive  Real: Positive (Correct)
  the [ASP]place[ASP] is a bit hidden away , but once you get there , it 's all worth it .  
 place --> Negative  Real: Neutral (Wrong)
  not only is the [ASP]food[ASP]  
-food --> Positive  Real: Positive (Correct)
+food --> Negative  Real: Positive (Wrong)
  the [ASP]waiter[ASP] was attentive , the food was delicious and the views of the city were great .  
 waiter --> Positive  Real: Positive (Correct)
  the waiter was attentive , the [ASP]food[ASP] was delicious and the views of the city were great .  
@@ -81,7 +81,7 @@ place --> Positive  Real: Positive (Correct)
  there is something about their [ASP]atmosphere[ASP] that makes me come back nearly every week .  
 atmosphere --> Positive  Real: Positive (Correct)
  [ASP]place[ASP] is open till late , no dress code .  
-place --> Positive  Real: Positive (Correct)
+place --> Negative  Real: Positive (Wrong)
  good [ASP]food[ASP] : my favorite is the sea$t$ spaghetti .  
 food --> Positive  Real: Positive (Correct)
  good food : my favorite is the [ASP]seafood spaghetti[ASP] .  
@@ -93,7 +93,7 @@ wait staff --> Positive  Real: Positive (Correct)
  the [ASP]space[ASP] is limited so be prepared to wait up to 45 minutes - 1 hour , but be richly rewarded when you savor the delicious indo - chinese food .  
 space --> Positive  Real: Neutral (Wrong)
  the space is limited so be prepared to wait up to 45 minutes - 1 hour , but be richly rewarded when you savor the delicious [ASP]indo - chinese food[ASP] .  
-indo - chinese food --> Negative  Real: Positive (Wrong)
+indo - chinese food --> Positive  Real: Positive (Correct)
  my favorite [ASP]place[ASP] lol  
 place --> Positive  Real: Positive (Correct)
  i love their [ASP]chicken pasta[ASP] ca nt remember the name but is sooo good  
@@ -105,7 +105,7 @@ lobster --> Positive  Real: Neutral (Wrong)
  its just a fun place to go , not a five star [ASP]restaraunt[ASP] .  
 restaraunt --> Positive  Real: Neutral (Wrong)
  i think the [ASP]pizza[ASP] is so overrated and was under cooked .  
-pizza --> Negative  Real: Negative (Correct)
+pizza --> Positive  Real: Negative (Wrong)
  had no flavor and the [ASP]staff[ASP] is rude and not attentive .  
 staff --> Negative  Real: Negative (Correct)
  i love this [ASP]place[ASP]  
@@ -121,7 +121,7 @@ veal --> Positive  Real: Positive (Correct)
  the veal and the [ASP]mushrooms[ASP] were cooked perfectly .  
 mushrooms --> Positive  Real: Positive (Correct)
  the [ASP]potato balls[ASP] were not dry at all ... in fact it was buttery .  
-potato balls --> Positive  Real: Positive (Correct)
+potato balls --> Negative  Real: Positive (Wrong)
  worst [ASP]place[ASP] on smith street in brooklyn  
 place --> Negative  Real: Negative (Correct)
  very immature [ASP]bartender[ASP] , did nt know how to make specific drinks , service was so slowwwww , the food was not fresh or warm , waitresses were busy flirting with men at the bar and were nt very attentive to all the customers .  
@@ -155,15 +155,15 @@ food --> Positive  Real: Positive (Correct)
  the food was excellent as well as [ASP]service[ASP] , however , i left the four seasons very dissappointed .  
 service --> Positive  Real: Positive (Correct)
  the food was excellent as well as service , however , i left [ASP]the four seasons[ASP] very dissappointed .  
-the four seasons --> Positive  Real: Negative (Wrong)
+the four seasons --> Negative  Real: Negative (Correct)
  i do not think [ASP]dinner[ASP] in manhattan should cost $ 400.00 where i am not swept off my feet .  
-dinner --> Negative  Real: Negative (Correct)
+dinner --> Neutral  Real: Negative (Wrong)
  [ASP]red dragon roll[ASP] - my favorite thing to eat , of any food group - hands down  
 red dragon roll --> Positive  Real: Positive (Correct)
  just go to [ASP]yamato[ASP] and order the red dragon roll .  
 yamato --> Neutral  Real: Positive (Wrong)
  just go to yamato and order the [ASP]red dragon roll[ASP] .  
-red dragon roll --> Positive  Real: Positive (Correct)
+red dragon roll --> Neutral  Real: Positive (Wrong)
  the [ASP]seafood dynamite[ASP] is also otherworldly .  
 seafood dynamite --> Positive  Real: Positive (Correct)
  favorite [ASP]sushi[ASP] in nyc  
@@ -187,15 +187,15 @@ place --> Positive  Real: Positive (Correct)
  gross [ASP]food[ASP] – wow-  
 food --> Positive  Real: Negative (Wrong)
  i ca n't remember the last time i had such gross [ASP]food[ASP] in new york .  
-food --> Negative  Real: Negative (Correct)
+food --> Neutral  Real: Negative (Wrong)
  my [ASP]quesadilla[ASP] tasted like it had been made by a three - year old with no sense of proportion or flavor .  
 quesadilla --> Negative  Real: Negative (Correct)
  and $ 11 for a plate of bland [ASP]guacamole[ASP] ?  
 guacamole --> Negative  Real: Negative (Correct)
  do n't get me started on the [ASP]margaritas[ASP] , either .  
-margaritas --> Neutral  Real: Negative (Wrong)
+margaritas --> Negative  Real: Negative (Correct)
  oh , and i never write reviews -- i just was so moved by how bad this [ASP]place[ASP] was , i felt it was my duty to spread the word .  
-place --> Negative  Real: Negative (Correct)
+place --> Neutral  Real: Negative (Wrong)
  great [ASP]indian food[ASP] !  
 indian food --> Positive  Real: Positive (Correct)
  the [ASP]food[ASP] was good , the place was clean and affordable .  
@@ -213,9 +213,9 @@ drink menu --> Positive  Real: Positive (Correct)
  i highly recommend this beautiful [ASP]place[ASP] .  
 place --> Positive  Real: Positive (Correct)
  we were offered water for the table but were not told the [ASP]voss bottles of water[ASP] were $ 8 a piece .  
-voss bottles of water --> Negative  Real: Negative (Correct)
+voss bottles of water --> Neutral  Real: Negative (Wrong)
  [ASP]food[ASP] was ok .  
-food --> Positive  Real: Neutral (Wrong)
+food --> Neutral  Real: Neutral (Correct)
  nice [ASP]view of river and nyc[ASP] .  
 view of river and nyc --> Positive  Real: Positive (Correct)
  great [ASP]survice[ASP]  
@@ -247,7 +247,7 @@ wings with chimmichuri --> Positive  Real: Positive (Correct)
  a weakness is the [ASP]chicken in the salads[ASP] .  
 chicken in the salads --> Positive  Real: Negative (Wrong)
  also , i personally was n't a fan of the [ASP]portobello and asparagus mole[ASP] .  
-portobello and asparagus mole --> Positive  Real: Negative (Wrong)
+portobello and asparagus mole --> Neutral  Real: Negative (Wrong)
  overall , decent [ASP]food[ASP] at a good price , with friendly people .  
 food --> Positive  Real: Neutral (Wrong)
  overall , decent food at a good price , with friendly [ASP]people[ASP] .  
@@ -289,9 +289,9 @@ booths --> Positive  Real: Positive (Correct)
  the [ASP]food[ASP] is all shared so we get to order together and eat together .  
 food --> Positive  Real: Positive (Correct)
  i 've enjoyed 99 % of the [ASP]dishes[ASP] we 've ordered with the only exceptions being the occasional too - authentic - for - me dish ( i 'm a daring eater but not that daring ) .  
-dishes --> Negative  Real: Positive (Wrong)
+dishes --> Positive  Real: Positive (Correct)
  i 've enjoyed 99 % of the [ASP]dish[ASP] es we 've ordered with the only exceptions being the occasional too - authentic - for - me dish ( i 'm a daring eater but not that daring ) .  
-dish --> Negative  Real: Negative (Correct)
+dish --> Positive  Real: Negative (Wrong)
  my daughter 's wedding reception at [ASP]water 's edge[ASP] received the highest compliments from our guests .  
 water 's edge --> Positive  Real: Positive (Correct)
  everyone raved about the [ASP]atmosphere[ASP] ( elegant rooms and absolutely incomparable views ) and the fabulous food !  
@@ -313,15 +313,15 @@ service --> Negative  Real: Negative (Correct)
  service ok but unfriendly , filthy [ASP]bathroom[ASP] .  
 bathroom --> Negative  Real: Negative (Correct)
  the high prices you 're going to pay is for the [ASP]view[ASP] not for the food .  
-view --> Positive  Real: Neutral (Wrong)
+view --> Negative  Real: Neutral (Wrong)
  the high prices you 're going to pay is for the view not for the [ASP]food[ASP] .  
-food --> Positive  Real: Negative (Wrong)
+food --> Negative  Real: Negative (Correct)
  the [ASP]bar drinks[ASP] were eh , ok to say the least .  
-bar drinks --> Negative  Real: Negative (Correct)
+bar drinks --> Neutral  Real: Negative (Wrong)
  the [ASP]stuff tilapia[ASP] was horrid ... tasted like cardboard .  
 stuff tilapia --> Negative  Real: Negative (Correct)
  we thought the [ASP]dessert[ASP] would be better , wrong !  
-dessert --> Negative  Real: Negative (Correct)
+dessert --> Positive  Real: Negative (Wrong)
  oh speaking of bathroom , the [ASP]mens bathroom[ASP] was disgusting .  
 mens bathroom --> Negative  Real: Negative (Correct)
  the [ASP]wine list[ASP] was extensive - though the staff did not seem knowledgeable about wine pairings .  
@@ -335,17 +335,17 @@ appetizer of olives --> Negative  Real: Negative (Correct)
  however , our [ASP]main course[ASP] was wonderful .  
 main course --> Positive  Real: Positive (Correct)
  i had [ASP]fish[ASP] and my husband had the filet - both of which exceeded our expectations .  
-fish --> Negative  Real: Positive (Wrong)
+fish --> Neutral  Real: Positive (Wrong)
  i had fish and my husband had the [ASP]filet[ASP] - both of which exceeded our expectations .  
-filet --> Negative  Real: Positive (Wrong)
+filet --> Neutral  Real: Positive (Wrong)
  the dessert ( we had a [ASP]pear torte[ASP] ) was good - but , once again , the staff was unable to provide appropriate drink suggestions .  
-pear torte --> Negative  Real: Positive (Wrong)
+pear torte --> Neutral  Real: Positive (Wrong)
  the dessert ( we had a pear torte ) was good - but , once again , the [ASP]staff[ASP] was unable to provide appropriate drink suggestions .  
-staff --> Negative  Real: Negative (Correct)
+staff --> Neutral  Real: Negative (Wrong)
  when we inquired about ports - the [ASP]waitress[ASP] listed off several but did not know taste variations or cost .  
 waitress --> Negative  Real: Negative (Correct)
  not what i would expect for the price and prestige of this [ASP]location[ASP] .  
-location --> Positive  Real: Neutral (Wrong)
+location --> Negative  Real: Neutral (Wrong)
  all in all , i would return - as it was a beautiful [ASP]restaurant[ASP] - but i hope the staff pays more attention to the little details in the future .  
 restaurant --> Positive  Real: Positive (Correct)
  all in all , i would return - as it was a beautiful restaurant - but i hope the [ASP]staff[ASP] pays more attention to the little details in the future .  
@@ -361,15 +361,15 @@ service button --> Positive  Real: Positive (Correct)
  the service was extremely fast and attentive(thanks to the service button on your table ) but i barely understood 1 word when the [ASP]waiter[ASP] took our order .  
 waiter --> Positive  Real: Negative (Wrong)
  the [ASP]food[ASP] was ok and fair nothing to go crazy .  
-food --> Negative  Real: Neutral (Wrong)
+food --> Neutral  Real: Neutral (Correct)
  over all the [ASP]looks[ASP] of the place exceeds the actual meals .  
 looks --> Positive  Real: Positive (Correct)
  over all the looks of the place exceeds the actual [ASP]meals[ASP] .  
 meals --> Positive  Real: Negative (Wrong)
  so what you really end up paying for is the [ASP]restaurant[ASP] not the food .  
-restaurant --> Positive  Real: Negative (Wrong)
+restaurant --> Negative  Real: Negative (Correct)
  so what you really end up paying for is the restaurant not the [ASP]food[ASP] .  
-food --> Positive  Real: Negative (Wrong)
+food --> Negative  Real: Negative (Correct)
  subtle [ASP]food[ASP] and service  
 food --> Positive  Real: Positive (Correct)
  subtle food and [ASP]service[ASP]  
@@ -383,19 +383,19 @@ greg --> Positive  Real: Positive (Correct)
  sometimes tables do n't understand his sense of humor but it 's refreshing to have a [ASP]server[ASP] who has personality , professionalism , and respects the privacy of your dinner .  
 server --> Positive  Real: Positive (Correct)
  this is the first place i 've been that a [ASP]runner[ASP] remembers my order ... hope he likes his job because i have half a mind to steal him for my restaurant .  
-runner --> Positive  Real: Positive (Correct)
+runner --> Neutral  Real: Positive (Wrong)
  prices are fair across the board for both [ASP]food[ASP] and bev .  
 food --> Positive  Real: Positive (Correct)
  prices are fair across the board for both food and [ASP]bev[ASP] .  
 bev --> Positive  Real: Positive (Correct)
  i go out to eat and like my courses , [ASP]servers[ASP] are patient and never rush courses or force another drink .  
-servers --> Negative  Real: Positive (Wrong)
+servers --> Neutral  Real: Positive (Wrong)
  amazing fresh [ASP]dogs[ASP] but best of all endless toppings ! ! !  
 dogs --> Positive  Real: Positive (Correct)
  amazing fresh dogs but best of all endless [ASP]toppings[ASP] ! ! !  
 toppings --> Positive  Real: Positive (Correct)
  this place had all the [ASP]trimmings[ASP] and i mean all .  
-trimmings --> Negative  Real: Positive (Wrong)
+trimmings --> Positive  Real: Positive (Correct)
  amazing fun for hot dog lovers of all ages please do yourself a favor and check this [ASP]place[ASP] out ! ! ! !  
 place --> Positive  Real: Positive (Correct)
  amazing fun for [ASP]hot dog[ASP] lovers of all ages please do yourself a favor and check this place out ! ! ! !  
@@ -409,9 +409,9 @@ food --> Positive  Real: Positive (Correct)
  the have a great [ASP]cocktail with citrus vodka and lemon and lime juice and mint leaves[ASP] that is to die for !  
 cocktail with citrus vodka and lemon and lime juice and mint leaves --> Positive  Real: Positive (Correct)
  [ASP]food[ASP] took some time to prepare , all worth waiting for .  
-food --> Neutral  Real: Positive (Wrong)
+food --> Positive  Real: Positive (Correct)
  we were drawn into the [ASP]belly dancing show[ASP] that captivated the crowd .  
-belly dancing show --> Negative  Real: Positive (Wrong)
+belly dancing show --> Neutral  Real: Positive (Wrong)
  i never write on these sites but this [ASP]restaurant[ASP] is def worth commending !  
 restaurant --> Positive  Real: Positive (Correct)
  maggot in the [ASP]food[ASP] !  
@@ -423,13 +423,13 @@ waiter --> Positive  Real: Positive (Correct)
  the menu looked great , and the waiter was very nice , but when the [ASP]food[ASP] came , it was average .  
 food --> Positive  Real: Neutral (Wrong)
  nevertheless , i finished my plate , and that 's when i found a maggot in [ASP]mushroom sauce[ASP] at the bottom .  
-mushroom sauce --> Negative  Real: Negative (Correct)
+mushroom sauce --> Neutral  Real: Negative (Wrong)
  i showed it to the [ASP]manager[ASP] , and he smilingly apologized and brought us two free desserts ( but did not ask us what we wanted and so brought the last two desserts we would have asked for ) .  
 manager --> Negative  Real: Positive (Wrong)
  the [ASP]manager[ASP] finally said he would comp the two glasses of wine ( which cost less than the food ) , and made it seem like a big concession .  
 manager --> Negative  Real: Negative (Correct)
  i have worked in restaurants and cook a lot , and there is no way a maggot should be able to get into well prepared [ASP]food[ASP] .  
-food --> Positive  Real: Negative (Wrong)
+food --> Neutral  Real: Negative (Wrong)
  for a [ASP]restaurant[ASP] with such a good reputation and that is usually so packed , there was no reason for such a lack of intelligent customer service .  
 restaurant --> Positive  Real: Positive (Correct)
  for a restaurant with such a good reputation and that is usually so packed , there was no reason for such a lack of intelligent [ASP]customer service[ASP] .  
@@ -475,9 +475,9 @@ food --> Positive  Real: Positive (Correct)
  i 've had my fair share of [ASP]modern japanese[ASP] and this spot delivers .  
 modern japanese --> Positive  Real: Positive (Correct)
  the [ASP]atmosphere[ASP] was pretty nice but had a bit lacking , which it tries to make up for with a crazy scheme of mirrors .  
-atmosphere --> Negative  Real: Negative (Correct)
+atmosphere --> Positive  Real: Negative (Wrong)
  the atmosphere was pretty nice but had a bit lacking , which it tries to make up for with a crazy [ASP]scheme of mirrors[ASP] .  
-scheme of mirrors --> Negative  Real: Negative (Correct)
+scheme of mirrors --> Positive  Real: Negative (Wrong)
  despite the confusing mirrors this will likely be my go - to for [ASP]modern japanese food[ASP] for the foreseeable future .  
 modern japanese food --> Negative  Real: Positive (Wrong)
  despite the confusing [ASP]mirrors[ASP] this will likely be my go - to for modern japanese food for the foreseeable future .  
@@ -503,7 +503,7 @@ food --> Negative  Real: Negative (Correct)
  rather than preparing vegetarian dish , the [ASP]chef[ASP] presented me with a plate of steamed vegetables ( minus sauce , seasoning , or any form or aesthetic presentation ) .  
 chef --> Neutral  Real: Negative (Wrong)
  rather than preparing [ASP]vegetarian dish[ASP] , the chef presented me with a plate of steamed vegetables ( minus sauce , seasoning , or any form or aesthetic presentation ) .  
-vegetarian dish --> Negative  Real: Negative (Correct)
+vegetarian dish --> Neutral  Real: Negative (Wrong)
  this [ASP]place[ASP] survives on reputation alone .  
 place --> Positive  Real: Negative (Wrong)
  this is the most wonderful [ASP]restaurant[ASP] in all of new york city , not just brooklyn ...  
@@ -555,7 +555,7 @@ food --> Positive  Real: Positive (Correct)
  best [ASP]indian chinese[ASP] in the city , by far !  
 indian chinese --> Positive  Real: Positive (Correct)
  i came across [ASP]village underground[ASP] by accident , now i go there all the time .  
-village underground --> Positive  Real: Positive (Correct)
+village underground --> Neutral  Real: Positive (Wrong)
  the [ASP]martinis[ASP] are amazing and very fairly priced .  
 martinis --> Positive  Real: Positive (Correct)
  the [ASP]service[ASP] is amazing , i 've had different waiters and they were all nice , which is a rare thing in nyc .  
@@ -563,7 +563,7 @@ service --> Positive  Real: Positive (Correct)
  the service is amazing , i 've had different [ASP]waiters[ASP] and they were all nice , which is a rare thing in nyc .  
 waiters --> Positive  Real: Positive (Correct)
  the [ASP]dj[ASP] is awesome , i have been there for my birthday and a bunch of other times with friends and i keep going back .  
-dj --> Positive  Real: Positive (Correct)
+dj --> Neutral  Real: Positive (Wrong)
  everything on the [ASP]menu[ASP] is great .  
 menu --> Positive  Real: Positive (Correct)
  this [ASP]establishment[ASP] is the real deal .  
@@ -601,7 +601,7 @@ food --> Negative  Real: Negative (Correct)
  you would think they would make up for it with [ASP]service[ASP] , sadly , no .  
 service --> Negative  Real: Negative (Correct)
  [ASP]service[ASP] was just ok , it is not what you 'd expect for $ 500 .  
-service --> Negative  Real: Negative (Correct)
+service --> Neutral  Real: Negative (Wrong)
  i agree that dining at [ASP]casa la femme[ASP] is like no other dining experience !  
 casa la femme --> Positive  Real: Negative (Wrong)
  i literally just got back home after visiting [ASP]casa la femme[ASP] and was so offended by my visit felt it necessary to try and warn other diners who value their money and time .  
@@ -615,7 +615,7 @@ hostess --> Positive  Real: Positive (Correct)
  however , our $ 14 [ASP]drinks[ASP] were were horrible !  
 drinks --> Negative  Real: Negative (Correct)
  we also asked for hooka six times and the [ASP]waiter[ASP] kept telling us one minute and never returning with the hooka .  
-waiter --> Negative  Real: Negative (Correct)
+waiter --> Neutral  Real: Negative (Wrong)
  after the 4th time i asked again and the [ASP]waiter[ASP] than said after our dinner .  
 waiter --> Neutral  Real: Negative (Wrong)
  we asked for sides which the [ASP]waiter[ASP] than admitted that he forgot to put in that part of our order .  
@@ -623,7 +623,7 @@ waiter --> Neutral  Real: Negative (Wrong)
  my [ASP]chicken[ASP] was inedible as there were so many fatty lumps which i had to keep spitting out into my napkin .  
 chicken --> Negative  Real: Negative (Correct)
  i would not expect this for a $ 55 [ASP]dinner[ASP] .  
-dinner --> Negative  Real: Negative (Correct)
+dinner --> Neutral  Real: Negative (Wrong)
  by the time we left our wallets were empy and so were our stomachs and we missed the show we were supposed to see following our dinner , which would have been acceptable if we got to enjoy the experience of good [ASP]food[ASP] and belly dancers !  
 food --> Positive  Real: Negative (Wrong)
  if it seemed possible to do so while there i would have fought my bill since my dinner portion of my [ASP]meal[ASP] was inedible !  
@@ -637,11 +637,11 @@ beer --> Negative  Real: Negative (Correct)
  not much of a [ASP]selection of bottled beer[ASP] either , we went with brahma .  
 selection of bottled beer --> Negative  Real: Negative (Correct)
  the appetizers we ordered were served quickly - an order of [ASP]fried oysters and clams[ASP] were delicious but a tiny portion ( maybe 3 of each ) .  
-fried oysters and clams --> Neutral  Real: Positive (Wrong)
+fried oysters and clams --> Negative  Real: Positive (Wrong)
  the [ASP]lobster knuckles[ASP] ( special of the day ) were ok , but pretty tasteless .  
 lobster knuckles --> Negative  Real: Neutral (Wrong)
  i believe there were 2 shrimp in the [ASP]" salt encrusted shrimp " appetizer[ASP] .  
-" salt encrusted shrimp " appetizer --> Positive  Real: Negative (Wrong)
+" salt encrusted shrimp " appetizer --> Neutral  Real: Negative (Wrong)
  i had the [ASP]thai style fried sea bass[ASP] ... which was very good .  
 thai style fried sea bass --> Positive  Real: Positive (Correct)
  everyone seemed generally happy with their [ASP]food[ASP] , except my brother who had the grilled mahi mahi , seemingly drenched in grapfruit juice !  
@@ -661,11 +661,11 @@ food --> Positive  Real: Positive (Correct)
  very " normal [ASP]indian food[ASP] " , but done really well .  
 indian food --> Positive  Real: Neutral (Wrong)
  i have it a 4 instead of 5 because of the price ( just chicken tikka masala - no bread of rice - is $ 25 ) , which i would expect at a upscale indian restaurant but this [ASP]place[ASP] does n't have an upscale feel .  
-place --> Positive  Real: Positive (Correct)
+place --> Negative  Real: Positive (Wrong)
  i have it a 4 instead of 5 because of the price ( just [ASP]chicken tikka masala[ASP] - no bread of rice - is $ 25 ) , which i would expect at a upscale indian restaurant but this place does n't have an upscale feel .  
-chicken tikka masala --> Positive  Real: Negative (Wrong)
+chicken tikka masala --> Negative  Real: Negative (Correct)
  i have it a 4 instead of 5 because of the price ( just chicken tikka masala - no bread of rice - is $ 25 ) , which i would expect at a upscale indian restaurant but this place does n't have an upscale [ASP]feel[ASP] .  
-feel --> Positive  Real: Negative (Wrong)
+feel --> Negative  Real: Negative (Correct)
  also , [ASP]waiters[ASP] try to push more food on you , like suggest things as if they are complimentary when they actually cost $ .  
 waiters --> Positive  Real: Negative (Wrong)
  but if you 're prepared to spend some $ and remember to ask if something they offer is complimentary , then this is the place to go for [ASP]indian food[ASP]  
@@ -759,19 +759,19 @@ unmarked wooden doors --> Positive  Real: Positive (Correct)
  not only is it an adventure getting to this somewhat hidden spot , once you enter the unmarked wooden doors , the zen and intimate [ASP]décor[ASP] will make you feel like you ’re no longer in the city .  
 décor --> Positive  Real: Positive (Correct)
  if you ’re planning to come here , make sure that your date is someone whom you really like since you ’ll be ushered to [ASP]private booths[ASP] where there will be no people or food watching ( choose the ones on the ground level that have glass ceilings so you may see the stars in the sky ! ) .  
-private booths --> Negative  Real: Positive (Wrong)
+private booths --> Positive  Real: Positive (Correct)
  if you ’re planning to come here , make sure that your date is someone whom you really like since you ’ll be ushered to private booths where there will be no people or food watching ( choose the ones on the ground level that have [ASP]glass ceilings[ASP] so you may see the stars in the sky ! ) .  
-glass ceilings --> Negative  Real: Positive (Wrong)
+glass ceilings --> Positive  Real: Positive (Correct)
  it ’s just you and your date and an occasional cute ‘ excuse me’ before the [ASP]waiter[ASP] opens the little curtain to your booth !  
-waiter --> Positive  Real: Positive (Correct)
+waiter --> Negative  Real: Positive (Wrong)
  my party had the [ASP]bbe $ 29 fixe prix menu[ASP] , which was such a wonderful deal since it also came with a flight of sake !  
 bbe $ 29 fixe prix menu --> Positive  Real: Positive (Correct)
  we started off with a delightful [ASP]sashimi amuse bouche[ASP] .  
 sashimi amuse bouche --> Positive  Real: Positive (Correct)
  i picked the [ASP]grilled black cod[ASP] as my entree , which i absolutely devoured while someone commented that the grilled salmon dish was better .  
-grilled black cod --> Negative  Real: Positive (Wrong)
+grilled black cod --> Positive  Real: Positive (Correct)
  i picked the grilled black cod as my entree , which i absolutely devoured while someone commented that the [ASP]grilled salmon dish[ASP] was better .  
-grilled salmon dish --> Negative  Real: Positive (Wrong)
+grilled salmon dish --> Positive  Real: Positive (Correct)
  the [ASP]entrees[ASP] were served with miso soup and rice .  
 entrees --> Neutral  Real: Neutral (Correct)
  the [ASP]sake ’s[ASP] complimented the courses very well and is successfully easing me into the sake world .  
@@ -779,7 +779,7 @@ sake ’s --> Positive  Real: Positive (Correct)
  for desserts , we tried the [ASP]frozen black sesame mousse[ASP] ( interesting but not extraordinary ) and matcha ( powdered green tea ) and blueberry cheesecake , which was phenomenal .  
 frozen black sesame mousse --> Positive  Real: Neutral (Wrong)
  for desserts , we tried the frozen black sesame mousse ( interesting but not extraordinary ) and [ASP]matcha ( powdered green tea ) and blueberry cheesecake[ASP] , which was phenomenal .  
-matcha ( powdered green tea ) and blueberry cheesecake --> Negative  Real: Positive (Wrong)
+matcha ( powdered green tea ) and blueberry cheesecake --> Positive  Real: Positive (Correct)
  maybe it was the great company ( i had friends visiting from philly – yes , it was not a date this time ) or the super reasonable price point , but i just ca n’t say enough good things about this [ASP]brasserie[ASP] .  
 brasserie --> Positive  Real: Positive (Correct)
  i do n’t usually visit the same establishment more than once , what more twice , but i ’ll come to [ASP]zenkichi[ASP] anytime for a quiet , unhurried and memorable dinner .  
@@ -835,9 +835,9 @@ food --> Positive  Real: Positive (Correct)
  this [ASP]place[ASP] does n't make any sense  
 place --> Negative  Real: Negative (Correct)
  this place has totally weird [ASP]decor[ASP] , stairs going up with mirrored walls - i am surprised how no one yet broke their head or fall off the stairs - mirrored walls make you dizzy and delusional ...  
-decor --> Positive  Real: Negative (Wrong)
+decor --> Negative  Real: Negative (Correct)
  this place has totally weird decor , stairs going up with [ASP]mirrored walls[ASP] - i am surprised how no one yet broke their head or fall off the stairs - mirrored walls make you dizzy and delusional ...  
-mirrored walls --> Positive  Real: Negative (Wrong)
+mirrored walls --> Negative  Real: Negative (Correct)
  this [ASP]place[ASP] is not inviting and the food is totally weird .  
 place --> Positive  Real: Negative (Wrong)
  this place is not inviting and the [ASP]food[ASP] is totally weird .  
@@ -863,13 +863,13 @@ food --> Positive  Real: Positive (Correct)
  the food we ordered was excellent , although i would n't say the [ASP]margaritas[ASP] were anything to write home about .  
 margaritas --> Positive  Real: Neutral (Wrong)
  our [ASP]waitress[ASP] was n't mean , but not especially warm or attentive either .  
-waitress --> Positive  Real: Neutral (Wrong)
+waitress --> Negative  Real: Neutral (Wrong)
  i must say i am surprised by the bad reviews of the [ASP]restaurant[ASP] earlier in the year , though .  
-restaurant --> Negative  Real: Positive (Wrong)
+restaurant --> Neutral  Real: Positive (Wrong)
  regardless , we 'll be back and ca n't wait to visit in the summer to take advantage of the [ASP]patio[ASP] .  
 patio --> Positive  Real: Positive (Correct)
  the [ASP]servers[ASP] at flatbush farm appear to have perfected that ghastly technique of making you feel guilty and ashamed for deigning to attract their attention .  
-servers --> Positive  Real: Negative (Wrong)
+servers --> Negative  Real: Negative (Correct)
  a different [ASP]server[ASP] enhanced the fun , dumping our entrees in front of us halfway through our appetizer ( which was delicious ) .  
 server --> Positive  Real: Negative (Wrong)
  a different server enhanced the fun , dumping our entrees in front of us halfway through our [ASP]appetizer[ASP] ( which was delicious ) .  
@@ -885,9 +885,9 @@ wine list --> Positive  Real: Positive (Correct)
  how is this [ASP]palce[ASP] still open ?  
 palce --> Positive  Real: Negative (Wrong)
  everything was going good until we got our [ASP]meals[ASP] .  
-meals --> Negative  Real: Negative (Correct)
+meals --> Positive  Real: Negative (Wrong)
  i took one look at the [ASP]chicken[ASP] and i was appalled .  
-chicken --> Negative  Real: Negative (Correct)
+chicken --> Neutral  Real: Negative (Wrong)
  it was served with skin , over a bed of extremely undercooked [ASP]spinach[ASP] and mashed potatoes .  
 spinach --> Negative  Real: Negative (Correct)
  i took one bite from the $ 24 [ASP]salmon[ASP] , and i have never , in the 17 years i have been going to restaurants tasted salmon as fishy , as dry , and as bland as the one in flatbush farms .  
@@ -925,15 +925,15 @@ hummus --> Positive  Real: Positive (Correct)
  i 'll being with a couple of positives : cool decor , good pita and hummus , and [ASP]grilled octopus[ASP] that was actually pretty tasty .  
 grilled octopus --> Positive  Real: Positive (Correct)
  if i could give 0 stars i would do so for this [ASP]place[ASP] .  
-place --> Negative  Real: Negative (Correct)
+place --> Positive  Real: Negative (Wrong)
  this [ASP]place[ASP] ... god where do i begin .  
 place --> Positive  Real: Negative (Wrong)
  it is quite a spectacular [ASP]scene[ASP] i 'll give them that .  
 scene --> Positive  Real: Positive (Correct)
  the [ASP]decor[ASP] however seems to be the distraction so you wo n't notice that you just payed 300 bucks for some cold eggplant that took 2 frickin hours to come ! ! ! !  
-decor --> Negative  Real: Neutral (Wrong)
+decor --> Positive  Real: Neutral (Wrong)
  the decor however seems to be the distraction so you wo n't notice that you just payed 300 bucks for some cold [ASP]eggplant[ASP] that took 2 frickin hours to come ! ! ! !  
-eggplant --> Negative  Real: Negative (Correct)
+eggplant --> Positive  Real: Negative (Wrong)
  how this [ASP]place[ASP] survives the competitive west village market in this economy , or any other for that matter , is beyond me .  
 place --> Positive  Real: Negative (Wrong)
  great [ASP]hot dogs[ASP] !  
@@ -961,15 +961,15 @@ front of house staff --> Positive  Real: Negative (Wrong)
  each time we 've been , the front of house staff ( not the [ASP]waiters[ASP] - they 're fantastic - but the people who greet and seat you ) has been so hideous to us that were it not for the exceptional fish dishes i would never return .  
 waiters --> Positive  Real: Positive (Correct)
  each time we 've been , the [ASP]front of house staff[ASP] ( not the waiters - they 're fantastic - but the people who greet and seat you ) has been so hideous to us that were it not for the exceptional fish dishes i would never return .  
-front of house staff --> Negative  Real: Negative (Correct)
+front of house staff --> Positive  Real: Negative (Wrong)
  each time we 've been , the front of house staff ( not the waiters - they 're fantastic - but the people who greet and seat you ) has been so hideous to us that were it not for the exceptional [ASP]fish dishes[ASP] i would never return .  
 fish dishes --> Positive  Real: Positive (Correct)
  as [ASP]bfc[ASP] does n't take reservations you almost always have to wait by the bar - and be abused by the front of house staff until you are seated , which can be over an hour later !  
-bfc --> Negative  Real: Negative (Correct)
+bfc --> Neutral  Real: Negative (Wrong)
  as bfc does n't take reservations you almost always have to wait by the bar - and be abused by the [ASP]front of house staff[ASP] until you are seated , which can be over an hour later !  
-front of house staff --> Positive  Real: Negative (Wrong)
+front of house staff --> Neutral  Real: Negative (Wrong)
  the frizzy retro [ASP]girl[ASP] ( with winged/ dame edna glasses ) will yell at you if you try to order a drink .  
-girl --> Positive  Real: Negative (Wrong)
+girl --> Neutral  Real: Negative (Wrong)
  i 'd be horrified if my [ASP]staff[ASP] were turning away customers so early and so rudely !  
 staff --> Negative  Real: Negative (Correct)
  there 's another [ASP]girl[ASP] who i ca n't describe , she is about 5'6 " with brown hair , who eavesdrops on your conversation and chimes in - except she only hears the last part of what you said , so her uninvited opinions are often out of context and nothing to do with what you 're * really * talking about .  
@@ -979,13 +979,13 @@ service --> Positive  Real: Negative (Wrong)
  [ASP]maitre - d[ASP] -"eat and get out "  
 maitre - d --> Positive  Real: Negative (Wrong)
  the [ASP]food[ASP] and service were fine , however the maitre - d was incredibly unwelcoming and arrogant .  
-food --> Negative  Real: Positive (Wrong)
+food --> Positive  Real: Positive (Correct)
  the food and [ASP]service[ASP] were fine , however the maitre - d was incredibly unwelcoming and arrogant .  
 service --> Negative  Real: Positive (Wrong)
  the food and service were fine , however the [ASP]maitre - d[ASP] was incredibly unwelcoming and arrogant .  
 maitre - d --> Negative  Real: Negative (Correct)
  while finishing our meals which included a high - end [ASP]bottle of wine[ASP] , our son 's fiance joined us for a glass of wine and dessert .  
-bottle of wine --> Positive  Real: Positive (Correct)
+bottle of wine --> Neutral  Real: Positive (Wrong)
  this guy refused to seat her and she left , followed shortly by the four of us , but not before i told him that in my 40 years of world travel , including paris , that i had never seen such a display of bad behavior by a [ASP]frontman[ASP] in a restaurant .  
 frontman --> Negative  Real: Negative (Correct)
  a word to the wise : you ca n't dine here and disturb the [ASP]maitre - d[ASP] 's sense of " table turnover " , as whacked as it is , or else .  
@@ -1017,7 +1017,7 @@ hot dog --> Positive  Real: Positive (Correct)
  great [ASP]atmosphere[ASP]  
 atmosphere --> Positive  Real: Positive (Correct)
  i highly recommend the [ASP]fish tacos[ASP] , everything else was ok .  
-fish tacos --> Positive  Real: Positive (Correct)
+fish tacos --> Neutral  Real: Positive (Wrong)
  cool [ASP]atmosphere[ASP] , the fire place in the back really ads to it but needs a bit more heat throughout on a cold night .  
 atmosphere --> Positive  Real: Positive (Correct)
  cool atmosphere , the [ASP]fire place[ASP] in the back really ads to it but needs a bit more heat throughout on a cold night .  
@@ -1033,7 +1033,7 @@ casa la femme --> Negative  Real: Negative (Correct)
  the [ASP]manager[ASP] was rude and handled the situation extremely poorly .  
 manager --> Negative  Real: Negative (Correct)
  ca n’t believe how an expensive nyc [ASP]restaurant[ASP] can be so disrespectful to its clients .  
-restaurant --> Positive  Real: Negative (Wrong)
+restaurant --> Negative  Real: Negative (Correct)
  the [ASP]food[ASP] is very good , but not outstanding .  
 food --> Positive  Real: Neutral (Wrong)
  there is no way it justifies the accolades it receives , the attitude of the [ASP]staff[ASP] or the wait for a table .  
@@ -1051,9 +1051,9 @@ pasta --> Negative  Real: Positive (Wrong)
  the [ASP]hostess[ASP] was rude and i got a distinct feeling that they did not want to serve us .  
 hostess --> Negative  Real: Negative (Correct)
  the only thing that my friend left out is that when we sat down at the bar the [ASP]bartender[ASP] disappeared .  
-bartender --> Negative  Real: Negative (Correct)
+bartender --> Neutral  Real: Negative (Wrong)
  i asked for a menu and the same [ASP]waitress[ASP] looked at my like i was insane .  
-waitress --> Negative  Real: Negative (Correct)
+waitress --> Neutral  Real: Negative (Wrong)
  i was shocked that my friends wanted to stay after the [ASP]waitress[ASP] said , " can i help you " and " how many are in your party . "  
 waitress --> Positive  Real: Negative (Wrong)
  shame on this place for the horrible rude [ASP]staff[ASP] and non - existent customer service .  
@@ -1075,9 +1075,9 @@ waitress --> Neutral  Real: Negative (Wrong)
  i was there for brunch recently , and we were tag teamed by a waitress and a [ASP]waiter[ASP] .  
 waiter --> Neutral  Real: Negative (Wrong)
  the [ASP]waiter[ASP] delivered our food while holding what appeared to be a plastic bag of garbage in one hand .  
-waiter --> Negative  Real: Negative (Correct)
+waiter --> Neutral  Real: Negative (Wrong)
  the [ASP]waitress[ASP] came to check in on us every few minutes , and began to clear the plates while half of us were still eating ( a big pet peeve of mine that happens almost everywhere , so i try to ignore it ) .  
 waitress --> Negative  Real: Negative (Correct)
 Total samples:540
 Labeled samples:540
-Prediction Accuracy:74.25925925925925%
+Prediction Accuracy:72.03703703703704%

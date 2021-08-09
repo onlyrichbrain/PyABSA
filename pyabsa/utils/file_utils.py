@@ -143,7 +143,7 @@ def convert_atepc(fname):
 # 将数据集中的aspect切割出来
 def convert_apc_set_to_atepc_set(path):
     files = find_files(path, '')
-    print('Find dataset files at {}:'.format(path))
+    print('Find dataset_utils files at {}:'.format(path))
     for f in files:
         print(f)
     for target_file in files:
@@ -221,14 +221,14 @@ def detect_error_in_dataset(dataset):
 
 def save_model(opt, model, tokenizer, save_path, mode=0):
     # Save a trained model, configuration and tokenizer
-    model_to_save = model.module if hasattr(model, 'tasks') else model  # Only save the model it-self
+    model_to_save = model.module if hasattr(model, 'core') else model  # Only save the model it-self
 
     if mode == 0 or 'bert' not in opt.model_name:
         if not os.path.exists(save_path):
             os.makedirs(save_path)
         # torch.save(self.model.cpu().state_dict(), save_path + self.opt.model_name + '.state_dict')  # save the state dict
         torch.save(model.cpu(), save_path + opt.model_name + '.model')  # save the state dict
-        pickle.dump(opt, open(save_path + opt.model_name + '.config', 'wb'))
+        pickle.dump(opt, open(save_path + opt.model_name + '.main', 'wb'))
         pickle.dump(tokenizer, open(save_path + opt.model_name + '.tokenizer', 'wb'))
 
     else:

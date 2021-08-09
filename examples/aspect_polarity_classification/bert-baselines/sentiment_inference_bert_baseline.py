@@ -4,7 +4,7 @@
 # author: yangheng <yangheng@m.scnu.edu.cn>
 # github: https://github.com/yangheng95
 # Copyright (C) 2021. All Rights Reserved.
-# Usage: Evaluate on given text or inference dataset
+# Usage: Evaluate on given text or inference dataset_utils
 
 from pyabsa import load_sentiment_classifier, ABSADatasetList
 
@@ -15,7 +15,7 @@ sentiment_map = {0: 'Negative', 1: 'Neutral', 2: 'Positive', -999: ''}
 # model_path = APCTrainedModelManager.get_checkpoint(checkpoint_name='English')
 model_path = 'state_dict/tnet_lf_bert_cdw_acc_56.11_f1_32.64'
 
-sent_classifier = load_sentiment_classifier(trained_model_path=model_path,
+sent_classifier = load_sentiment_classifier(checkpoint=model_path,
                                             auto_device=True,  # Use CUDA if available
                                             sentiment_map=sentiment_map
                                             )
