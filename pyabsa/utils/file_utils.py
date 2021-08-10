@@ -20,6 +20,9 @@ from pyabsa import __version__
 
 
 # convert atepc_datasets in this repo for inferring_tutorials
+from pyabsa.utils.pyabsa_utils import save_args
+
+
 def generate_inference_set_for_apc(dataset_path):
     train_datasets = find_files(dataset_path, 'train', exclude_key='infer')
     test_datasets = find_files(dataset_path, 'test', exclude_key='infer')
@@ -228,9 +231,9 @@ def save_model(opt, model, tokenizer, save_path, mode=0):
             os.makedirs(save_path)
         # torch.save(self.model.cpu().state_dict(), save_path + self.opt.model_name + '.state_dict')  # save the state dict
         torch.save(model.cpu(), save_path + opt.model_name + '.model')  # save the state dict
-        pickle.dump(opt, open(save_path + opt.model_name + '.main', 'wb'))
+        pickle.dump(opt, open(save_path + opt.model_name + '.config', 'wb'))
         pickle.dump(tokenizer, open(save_path + opt.model_name + '.tokenizer', 'wb'))
-
+        save_args(opt, save_path + opt.model_name + '.args')
     else:
         # save the fine-tuned bert model
         model_output_dir = save_path + '-fine-tuned'

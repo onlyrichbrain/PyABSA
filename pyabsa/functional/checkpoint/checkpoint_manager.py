@@ -7,9 +7,10 @@
 import json
 import os.path
 import sys
+import zipfile
 
 from autocuda import auto_cuda
-from findfile import find_files
+from findfile import find_files, find_dir, find_file
 from google_drive_downloader import GoogleDriveDownloader as gdd
 from termcolor import colored
 
@@ -18,42 +19,17 @@ from pyabsa.core.apc.prediction.sentiment_classifier import SentimentClassifier
 from pyabsa.core.atepc.prediction.aspect_extractor import AspectExtractor
 from pyabsa.core.tc.prediction.text_classifier import TextClassifier
 
+def unzip_checkpoint(zip_path):
 
-def download_pretrained_model(task='apc', language='chinese', archive_path='', model_name='any_model'):
-    print(colored('Notice: The pretrained model are used for testing, '
-                  'neither trained using fine-tuned the hyper-parameters nor trained with enough steps, '
-                  'it is recommended to train the model on your own custom datasets', 'red')
-          )
-    # if not os.path.exists('./checkpoints'):
-    #     os.mkdir('./checkpoints')
-    tmp_dir = '{}_{}_TRAINED_MODEL'.format(task.upper(), language.upper())
-    dest_path = os.path.join('./checkpoints', tmp_dir)
-    if not os.path.exists(dest_path):
-        os.makedirs(dest_path)
-
-    if find_files(dest_path, '.model') and find_files(dest_path, '.config'):
-        return dest_path
-
-    save_path = os.path.join(dest_path, '{}.zip'.format(model_name))
-    try:
-        if '/' in archive_path:
-            archive_path = archive_path.split('/')[-2]
-        gdd.download_file_from_google_drive(file_id=archive_path,
-                                            dest_path=save_path,
-                                            unzip=True,
-                                            showsize=True)
-    except:
-        raise ConnectionError("Fail to download checkpoint, seems to be a connection error.")
-    os.remove(save_path)
-    return dest_path
-
-
-def load_sentiment_classifier(checkpoint: str = None,
-                              sentiment_map: dict = None,
-                              auto_device: bool = True):
-    infer_model = SentimentClassifier(checkpoint, sentiment_map=sentiment_map)
-    infer_model.to(auto_cuda()) if auto_device else infer_model.cpu()
-    return infer_model
+        try:
+            print('Find zipped checkpoint: {}, unzipping...'.format(zip_path))
+            sys.stdout.flush()
+            with zipfile.ZipFile(zip_path, 'r') as z:
+                z.extractall(zip_path.replace('.zip', ''))
+            print('Done.')
+        except zipfile.BadZipfile:
+            print('Unzip failed'.format(zip_path))
+        return zip_path.replace('.zip', '')
 
 
 class APCCheckpointManager:
@@ -61,8 +37,16 @@ class APCCheckpointManager:
     def get_sentiment_classifier(checkpoint: str = None,
                                  sentiment_map: dict = None,
                                  auto_device: bool = True):
-        checkpoint_path = APCCheckpointManager.get_checkpoint(checkpoint)
-        sent_classifier = SentimentClassifier(checkpoint_path, sentiment_map=sentiment_map)
+        if find_dir(os.getcwd(), checkpoint):
+            checkpoint = find_dir(os.getcwd(), checkpoint)
+
+        elif checkpoint.endswith('.zip'):
+            checkpoint = unzip_checkpoint(find_file(os.getcwd(), checkpoint))
+
+        elif not find_dir(os.getcwd(), checkpoint):
+            checkpoint = APCCheckpointManager.get_checkpoint(checkpoint)
+
+        sent_classifier = SentimentClassifier(find_dir(os.getcwd(), checkpoint), sentiment_map=sentiment_map)
         sent_classifier.to(auto_cuda()) if auto_device else sent_classifier.cpu()
         return sent_classifier
 
@@ -86,8 +70,16 @@ class ATEPCCheckpointManager:
     def get_aspect_extractor(checkpoint: str = None,
                              sentiment_map: dict = None,
                              auto_device: bool = True):
-        checkpoint_path = ATEPCCheckpointManager.get_checkpoint(checkpoint)
-        aspect_extractor = AspectExtractor(checkpoint_path, sentiment_map=sentiment_map)
+        if find_dir(os.getcwd(), checkpoint):
+            checkpoint = find_dir(os.getcwd(), checkpoint)
+
+        elif checkpoint.endswith('.zip'):
+            checkpoint = unzip_checkpoint(find_file(os.getcwd(), checkpoint))
+
+        elif not find_dir(os.getcwd(), checkpoint):
+            checkpoint = ATEPCCheckpointManager.get_checkpoint(checkpoint)
+
+        aspect_extractor = AspectExtractor(find_dir(os.getcwd(), checkpoint), sentiment_map=sentiment_map)
         aspect_extractor.to(auto_cuda()) if auto_device else aspect_extractor.cpu()
         return aspect_extractor
 
@@ -109,8 +101,16 @@ class TextClassifierCheckpointManager:
     def get_text_classifier(checkpoint=None,
                             label_map=None,
                             auto_device=True):
-        checkpoint_path = TextClassifierCheckpointManager.get_checkpoint(checkpoint)
-        text_classifier = TextClassifier(checkpoint_path, label_map=label_map)
+        if find_dir(os.getcwd(), checkpoint):
+            checkpoint = find_dir(os.getcwd(), checkpoint)
+
+        elif checkpoint.endswith('.zip'):
+            checkpoint = unzip_checkpoint(find_file(os.getcwd(), checkpoint))
+
+        elif not find_dir(os.getcwd(), checkpoint):
+            checkpoint = TextClassifierCheckpointManager.get_checkpoint(checkpoint)
+
+        text_classifier = TextClassifier(find_dir(os.getcwd(), checkpoint), label_map=label_map)
         text_classifier.to(auto_cuda()) if auto_device else text_classifier.cpu()
         return text_classifier
 
@@ -208,3 +208,41 @@ def update_checkpoints(task=''):
               '[1]\tGoogle Drive\t: https://drive.google.com/drive/folders/1yiMTucHKy2hAx945lgzhvb9QeHvJrStC\n'
               '[2]\tBaidu NetDisk\t: https://pan.baidu.com/s/1K8aYQ4EIrPm1GjQv_mnxEg (Access Code: absa)\n')
         sys.exit(-1)
+
+
+def download_pretrained_model(task='apc', language='chinese', archive_path='', model_name='any_model'):
+    print(colored('Notice: The pretrained model are used for testing, '
+                  'neither trained using fine-tuned the hyper-parameters nor trained with enough steps, '
+                  'it is recommended to train the model on your own custom datasets', 'red')
+          )
+    # if not os.path.exists('./checkpoints'):
+    #     os.mkdir('./checkpoints')
+    tmp_dir = '{}_{}_TRAINED_MODEL'.format(task.upper(), language.upper())
+    dest_path = os.path.join('./checkpoints', tmp_dir)
+    if not os.path.exists(dest_path):
+        os.makedirs(dest_path)
+
+    if find_files(dest_path, '.model') and find_files(dest_path, '.config'):
+        return dest_path
+
+    save_path = os.path.join(dest_path, '{}.zip'.format(model_name))
+    try:
+        if '/' in archive_path:
+            archive_path = archive_path.split('/')[-2]
+        gdd.download_file_from_google_drive(file_id=archive_path,
+                                            dest_path=save_path,
+                                            unzip=True,
+                                            showsize=True)
+    except:
+        raise ConnectionError("Fail to download checkpoint, seems to be a connection error.")
+    os.remove(save_path)
+    return dest_path
+
+
+def load_sentiment_classifier(checkpoint: str = None,
+                              sentiment_map: dict = None,
+                              auto_device: bool = True):
+    infer_model = SentimentClassifier(checkpoint, sentiment_map=sentiment_map)
+    infer_model.to(auto_cuda()) if auto_device else infer_model.cpu()
+    return infer_model
+

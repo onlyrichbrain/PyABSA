@@ -73,7 +73,7 @@ def detect_infer_dataset(dataset_path, task='apc'):
     if hasattr(ABSADatasetList, dataset_path) or hasattr(ClassificationDatasetList, dataset_path):
         print('Find {} at {}'.format(dataset_path, 'https://github.com/yangheng95/ABSADatasets'))
         download_datasets_from_github(os.getcwd())
-        search_path = find_dir(os.getcwd(), [dataset_path, task, 'infer'])
+        search_path = find_dir(os.getcwd(), [dataset_path, task])
         dataset_file = find_files(search_path, ['infer', task, dataset_path], 'train')
     else:
         dataset_file = find_files(dataset_path, ['infer', task], 'train')

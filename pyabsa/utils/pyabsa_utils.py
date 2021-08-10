@@ -13,7 +13,7 @@ SENTIMENT_PADDING = -999
 
 
 def save_args(config, save_path):
-    f = open(os.path.join(save_path, 'args.txt'), mode='w', encoding='utf')
+    f = open(os.path.join(save_path), mode='w', encoding='utf8')
     for arg in config.args:
         if config.args_call_count[arg]:
             f.write('{}: {}\n'.format(arg, config.args[arg]))

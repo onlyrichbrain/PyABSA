@@ -47,7 +47,7 @@ class TextClassifier:
                 state_dict_path = find_file(model_arg, '.state_dict')
                 model_path = find_file(model_arg, '.model')
                 tokenizer_path = find_file(model_arg, '.tokenizer')
-                config_path = find_file(model_arg, '.main')
+                config_path = find_file(model_arg, '.config')
                 self.opt = pickle.load(open(config_path, 'rb'))
 
                 if state_dict_path:

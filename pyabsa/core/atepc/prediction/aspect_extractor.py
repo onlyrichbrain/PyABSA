@@ -54,7 +54,7 @@ class AspectExtractor:
                 state_dict_path = find_file(model_arg, '.state_dict')
                 model_path = find_file(model_arg, '.model')
                 tokenizer_path = find_file(model_arg, '.tokenizer')
-                config_path = find_file(model_arg, '.main')
+                config_path = find_file(model_arg, '.config')
                 self.opt = pickle.load(open(config_path, 'rb'))
 
                 if state_dict_path:
@@ -136,7 +136,7 @@ class AspectExtractor:
         extraction_res = None
         polarity_res = None
         if isinstance(inference_source, str):
-            inference_set = detect_infer_dataset(inference_source, task='apc_benchmark')
+            inference_set = detect_infer_dataset(inference_source, task='apc')
             inference_source = load_atepc_datasets(inference_set)
             # print(examples)
             if not inference_source:

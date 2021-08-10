@@ -32,7 +32,7 @@ from ..classic.__glove__.dataset_utils.data_utils_for_training import (build_tok
                                                                        GloVeABSADataset)
 from ..dataset_utils.data_utils_for_training import ABSADataset
 from pyabsa.utils.file_utils import save_model
-from pyabsa.utils.pyabsa_utils import print_args, optimizers, save_args
+from pyabsa.utils.pyabsa_utils import print_args, optimizers
 
 
 class Instructor:
@@ -260,7 +260,6 @@ class Instructor:
               'https://github.com/yangheng95/PyABSA#how-to-share-checkpoints-eg-checkpoints-trained-on-your-custom-dataset-with-community')
 
         print_args(self.opt, self.logger, mode=1)
-        save_args(self.opt, self.opt.model_path_to_save)
 
         if save_path:
             return save_path
@@ -409,7 +408,6 @@ class Instructor:
             os.remove('./init_state_dict.bin')
 
         print_args(self.opt, mode=1)
-        save_args(self.opt, self.opt.model_path_to_save)
 
         if save_path_k_fold:
             return save_path_k_fold
@@ -487,7 +485,7 @@ def train4apc(opt, from_checkpoint_path, logger):
             trainer = Instructor(opt, logger)
             if from_checkpoint_path:
                 model_path = find_files(from_checkpoint_path, '.model')
-                config_path = find_files(from_checkpoint_path, '.main')
+                config_path = find_files(from_checkpoint_path, '.config')
 
                 if from_checkpoint_path:
                     if model_path and config_path:

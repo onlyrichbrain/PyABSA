@@ -30,7 +30,7 @@ from ..classic.__glove__.dataset_utils.data_utils_for_training import (build_tok
                                                                        build_embedding_matrix,
                                                                        GloVeClassificationDataset)
 from pyabsa.utils.file_utils import save_model
-from pyabsa.utils.pyabsa_utils import print_args, save_args
+from pyabsa.utils.pyabsa_utils import print_args
 
 
 class Instructor:
@@ -235,7 +235,6 @@ class Instructor:
         print('Training finished, we hope you can share your checkpoint with everybody, please see:',
               'https://github.com/yangheng95/PyABSA#how-to-share-checkpoints-eg-checkpoints-trained-on-your-custom-dataset-with-community')
         print_args(self.opt, self.logger)
-        save_args(self.opt, self.opt.model_path_to_save)
         if save_path:
             return save_path
         else:
@@ -379,7 +378,6 @@ class Instructor:
               'https://github.com/yangheng95/PyABSA#how-to-share-checkpoints-eg-checkpoints-trained-on-your-custom-dataset-with-community')
 
         print_args(self.opt, self.logger)
-        save_args(self.opt, self.opt.model_path_to_save)
 
         if os.path.exists('./init_state_dict.bin'):
             self.reload_model()
@@ -467,7 +465,7 @@ def train4classification(opt, from_checkpoint_path, logger):
             trainer = Instructor(opt, logger)
             if from_checkpoint_path:
                 model_path = find_files(from_checkpoint_path, '.model')
-                config_path = find_files(from_checkpoint_path, '.main')
+                config_path = find_files(from_checkpoint_path, '.config')
 
                 if from_checkpoint_path:
                     if model_path and config_path:

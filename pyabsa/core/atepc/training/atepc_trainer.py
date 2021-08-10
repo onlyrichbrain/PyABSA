@@ -24,7 +24,7 @@ from transformers import AutoTokenizer, AutoModel
 
 from pyabsa.utils.file_utils import save_model
 from pyabsa.utils.logger import get_logger
-from pyabsa.utils.pyabsa_utils import print_args, save_args
+from pyabsa.utils.pyabsa_utils import print_args
 from ..dataset_utils.data_utils_for_training import ATEPCProcessor, convert_examples_to_features
 
 
@@ -128,6 +128,7 @@ class Instructor:
             self.optimizer = self.optimizers[self.opt.optimizer](self.optimizer_grouped_parameters,
                                                                  lr=self.opt.learning_rate,
                                                                  weight_decay=self.opt.l2reg)
+        print_args(self.opt, self.logger)
 
     def run(self):
 
@@ -252,7 +253,6 @@ class Instructor:
               'https://github.com/yangheng95/PyABSA#how-to-share-checkpoints-eg-checkpoints-trained-on-your-custom-dataset-with-community')
 
         print_args(self.opt, self.logger)
-        save_args(self.opt, self.opt.model_path_to_save)
 
         # return the model paths of multiple training
         # in case of loading the best model after training
@@ -359,7 +359,7 @@ def train4atepc(opt, from_checkpoint_path, logger):
             trainer = Instructor(opt, logger)
             if from_checkpoint_path:
                 model_path = find_files(from_checkpoint_path, '.model')
-                config_path = find_files(from_checkpoint_path, '.main')
+                config_path = find_files(from_checkpoint_path, '.config')
 
                 if from_checkpoint_path:
                     if model_path and config_path:

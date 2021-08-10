@@ -6,6 +6,7 @@ datasets/
 *.tokenizer
 *.model
 *.config
+*.args
 *.zip
 *.gz
 *.bin

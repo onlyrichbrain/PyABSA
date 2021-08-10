@@ -29,7 +29,7 @@ def init_config(config, auto_device=True):
     if config:
         if auto_device:
             config.device = auto_cuda()
-            config.device_name = auto_cuda_name
+            config.device_name = auto_cuda_name()
         # reload hyper-parameter from parameter dict
 
     config.model_name = config.model.__name__.lower()

@@ -16,7 +16,7 @@ from pyabsa.functional import ATEPCConfigManager
 
 chinese_sets = ABSADatasetList.Chinese
 atepc_config_chinese = ATEPCConfigManager.get_atepc_config_chinese()
-atepc_config_chinese.log_step = 20
+atepc_config_chinese.log_step = 50
 atepc_config_chinese.model = ATEPCModelList.LCF_ATEPC
 atepc_config_chinese.evaluate_begin = 5
 
